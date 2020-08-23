@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>ONE - Personal Resume</title>
+<link href="styles.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://miladazad.github.io/css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+<link href='http://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+<script type='text/javascript' src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js?ver=3.3"></script>	
+<script type="text/javascript" src="https://miladazad.github.io/js/jquery.prettyPhoto.js"></script>
+<script type="text/javascript" src="https://miladazad.github.io/js/jquery.easing.1.3.js"></script>
+
+</head>
+
+<body>
+<div id="header">
+	
+	<ul id="main-menu">
+    	<li><a href="#about">About</a></li>
+        <li><a href="#experience">Educations</a></li>
+        <li><a href="#work">Certifications</a></li>
+        <li><a href="#connect">Connect</a></li>
+    </ul>
+</div>
+
+<div id="container">
+
+<!--Begin About Section-->
+    <div id="about">
+    	<h1>About</h1>
+
+        <div class="top-divider"></div>
+        <div class="content">
+        	<img src="https://miladazad.github.io/images/designer-photo.jpg" />
+            <h2>My Name is Milad Azadnia, and I am a Computer Programmer</h2>
+			<h3>Date Of Birth:</h3>
+            <p>1989</p> 
+			<h3>Marital status:</h3>
+            <p>Married for 9 years</p> 			
+            <ul id="service-icons">
+            	<li class="services-design">C#</li>
+                <li class="services-mobile">PHP</li>
+                <li class="services-film">ASP</li>
+            </ul>
+        </div>
+    <div class="bottom-divider"></div> 
+    </div>
+<!--End About Section-->
+
+<!--Begin Experience Section-->   
+    <div id="experience">
+    	<h1>Educations</h1>
+        <div class="top-divider"></div>
+        <div class="content">
+           
+            <div class="col col-mid">
+            <h2>Bachelor of Computer Engineering</h2>
+            <p>2011-2020</p>
+            </div>
+            
+			            <div class="col">
+            <h2>Bachelor of Mathematics</h2>
+            <p>Shahed University</p>
+			 <p>2007 - 2011</p>
+            </div>
+			
+            <div class="col">
+            <h2>SECONDARY EDUCATION  STUDIES</h2>
+            <p>Field of Study : Mathematics-Physics</p>
+            </div>
+        </div>    
+        <div class="bottom-divider"></div>
+    </div>
+<!--End Experience Section-->
+
+<!--Begin Work Section-->  
+    <div id="work">
+<h1>Certifications</h1>
+        <div class="top-divider"></div>
+        <div class="content">
+            <div class="col">
+            <h2>.Net Framework 3.5 Windows Form Application C# .Net - 2011 </h2>
+            <p></p> 
+            </div>
+            
+            <div class="col col-mid">
+            <h2>I & M SQL Server - 2011</h2>
+            <p></p>
+            </div>
+            
+            <div class="col">
+            <h2>.Net FrameWork Foundation - 2011</h2>
+            <p></p>
+            </div>
+			            <div class="col">
+            <h2>.Net Framework 3.5 ASP Form Application C# - 2011</h2>
+            <p></p>
+            </div>
+			 <div class="col">
+            <h2>Basic Exploit Development for Pentration Testers - 2016</h2>
+            <p></p>
+            </div>
+						 <div class="col">
+            <h2>Advance Exploit Development for Pentration Testers - 2016</h2>
+            <p></p>
+            </div>
+        </div>    
+        <div class="bottom-divider"></div>
+    </div>
+<!--End Work Section-->
+
+<!--Begin Connect Section-->  
+    <div id="connect">
+    	<h1>Connect</h1>
+        <div class="top-divider"></div>
+                <div id="social-footer">
+                	<h2>Quera</h2>
+                    <p>https://quera.ir/profile/milad.azadnia89 </p>
+                	<h2>Github</h2>
+                    <p>https://github.com/miladazad</p>
+                	<h2>Email</h2>
+                    <p>milad.azadnia89@gmail.com</p>					
+                </div>
+            </div>
+    </div>
+<!--End Connect Section--> 
+
+</div>
+
+ <!-- The JavaScript -->  
+        <script type="text/javascript">
+    		$(function() {
+                $('#main-menu li a').bind('click',function(event){
+                    var $anchor = $(this);
+                    
+                    $('html, body').stop().animate({
+                        scrollTop: $($anchor.attr('href')).offset().top
+                    }, 1500,'easeInOutExpo');
+
+                    event.preventDefault();
+                });
+            });
+			
+ 			 $(document).ready(function(){
+    		$("a[rel^='prettyPhoto']").prettyPhoto({social_tools:false, deeplinking: false});
+  			});
+
+        </script>
+</body>
+</html>
